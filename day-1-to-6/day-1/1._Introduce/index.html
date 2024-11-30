@@ -1,0 +1,85 @@
+<!-- JavaScript adalah bahasa skrip yang memungkinkan Anda membuat konten yang diperbarui secara dinamis, mengontrol multimedia, menganimasikan gambar, dan hampir semua hal lainnya. -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Introduce | Day 1</title>
+    <style>
+        button {
+            font-family: "helvetica neue", helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgb(200 200 0 / 0.6);
+            background: rgba(0, 217, 217, 0.6);
+            color: rgb(100 0 0 / 1);
+            box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button">Player 1: Chris</button>
+
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", updateName);
+        function updateName() {
+            const name = prompt("Enter a new name");
+            button.textContent = `Player 1: ${name}`;
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Bahasa JavaScript sisi klien inti terdiri dari beberapa fitur pemrograman umum yang memungkinkan Anda melakukan hal-hal seperti:
+    1. Simpan nilai yang berguna di dalam variabel. Misalnya pada contoh di atas, kita meminta nama baru dimasukkan lalu menyimpan nama tersebut dalam variabel bernama name.
+    2. Operasi pada potongan teks (dikenal sebagai "string" dalam pemrograman). Pada contoh di atas kita mengambil string "Pemain 1:" dan menggabungkannya ke name variabel 
+        untuk membuat label teks lengkap, mis. "Pemain 1: Chris".
+    3. Menjalankan kode sebagai respons terhadap peristiwa tertentu yang terjadi di halaman web. Kami menggunakan a click peristiwa dalam contoh kita di atas untuk mendeteksi 
+        kapan label diklik dan kemudian menjalankan kode yang memperbarui label teks.
+    4. Dan banyak lagi! 
+-->
+
+<!-- 
+    📝 The DOM (Document Object Model) API memungkinkan Anda untuk memanipulasi HTML dan CSS, membuat, menghapus dan mengubah HTML, secara dinamis menerapkan gaya baru ke halaman Anda, dll.
+-->
+
+<!-- 
+    Saat Anda memuat halaman web di browser Anda, Anda menjalankan kode Anda (HTML, CSS, dan JavaScript) di dalam lingkungan eksekusi (tab browser). Ini seperti pabrik yang mengambil bahan 
+    mentah (kode) dan mengeluarkan produk (halaman web).
+-->
+
+<!-- 
+    ⚠️ Urutan berjalan JavaScript ⚠️
+    Ketika browser menemukan blok JavaScript, umumnya berjalan secara berurutan, dari atas ke bawah. Ini berarti bahwa Anda perlu berhati-hati apa urutan 
+    Anda menempatkan hal-hal dalam.
+-->
+
+<!-- 
+    ⚠️ Anda harus berhati-hati ⚠️ 
+    agar objek yang direferensikan dalam kode Anda ada sebelum Anda mencoba melakukan sesuatu padanya.
+-->
+
+<!-- 
+    💿 Kode sisi server versus sisi klien
+    Anda mungkin juga mendengar istilahnya server-side and sisi klien kode, terutama dalam konteks pengembangan web. Kode sisi klien adalah kode yang dijalankan di komputer pengguna — 
+    ketika halaman web dilihat, kode sisi klien halaman diunduh, kemudian dijalankan dan ditampilkan oleh browser. Dalam modul ini kita secara eksplisit berbicara tentang client-side JavaScript.
+
+    Kode sisi server di sisi lain dijalankan di server, kemudian hasilnya diunduh dan ditampilkan di browser. Contoh bahasa web sisi server yang populer termasuk PHP, Python, Ruby, ASP.NET, 
+    dan bahkan JavaScript! JavaScript juga dapat digunakan sebagai bahasa sisi server, misalnya di lingkungan Node.js yang populer — Anda dapat mengetahui lebih lanjut tentang JavaScript 
+    sisi server di kami Situs Web Dinamis – Pemrograman sisi server topik.
+-->
+
+<!-- 
+    Kata dynamic digunakan untuk mendeskripsikan JavaScript sisi klien dan bahasa sisi server — ini mengacu pada kemampuan untuk memperbarui tampilan halaman web/aplikasi untuk menampilkan 
+    hal-hal berbeda dalam keadaan berbeda, menghasilkan konten baru sesuai kebutuhan.
+-->

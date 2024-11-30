@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Apply JavaScript example</title>
+</head>
+
+<body>
+    <button>Click me</button>
+
+    <script>
+        // Bagian Untuk Menulis Javascript
+
+        function createParagraph() {
+            const para = document.createElement("p");
+            para.textContent = " You Click The Button !"
+            document.body.appendChild(para)
+        }
+
+        const buttons = document.querySelectorAll("button")
+
+        for (const button of buttons ) {
+            button.addEventListener("click", createParagraph)
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    JavaScript adalah kasus sensitif, dan sangat rewel, sehingga Anda perlu memasukkan sintaks persis seperti yang ditunjukkan, jika tidak mungkin tidak bekerja.
+-->
+
+<!-- 
+    📝 Dalam contoh JavaScript internal di atas, elemen skrip ditempatkan di bagian bawah badan dokumen, dan oleh karena itu hanya dijalankan setelah sisa badan HTML diurai.
+-->

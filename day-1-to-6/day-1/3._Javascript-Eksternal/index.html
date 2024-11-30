@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Apply JavaScript example</title>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <button>Click me 1</button>
+    <button>Click me 2</button>
+    <button>Click me 3</button>
+    <button>Click me 4</button>
+    <button>Click me 5</button>
+</body>
+
+</html>
+
+<!-- 
+    📝 Dalam contoh JavaScript eksternal di atas, elemen skrip ditempatkan di kepala dokumen, sebelum badan HTML diurai. Tapi karena kita menggunakan <script type="module">, 
+    kode diperlakukan sebagai a modul dan browser menunggu semua HTML diproses sebelum mengeksekusi modul JavaScript. ( Menempatkan skrip eksternal di bagian bawah tubuh. 
+    Tetapi jika ada banyak HTML dan jaringan lambat, mungkin perlu banyak waktu sebelum browser bahkan dapat mulai mengambil dan memuat skrip, sehingga menempatkan skrip 
+    eksternal di kepala biasanya lebih baik. )
+-->
