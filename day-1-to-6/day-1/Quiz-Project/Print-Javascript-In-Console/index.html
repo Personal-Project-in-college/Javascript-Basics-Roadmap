@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript | Print In Console</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .form input[type="text"] {
+            width: 200px;
+        }
+
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>How To Open The Console</h1>
+
+    <p>To see the message, right-click on the page, select **Inspect**, and go to the **Console** tab.</p>
+
+    <label for="messageField">Input The Message, and check in console:</label>
+    <input type="text" required id="messageField" class="messageField">
+    <input type="button" value="Submit message" class="messageSubmit">
+
+    <script>
+        const messageField = document.querySelector('.messageField');
+        const messageSubmit = document.querySelector('.messageSubmit');
+
+        function printMessageInConsole() {
+            const userMessage = messageField.value;
+            console.log(userMessage)
+        }
+        
+        messageSubmit.addEventListener("click", printMessageInConsole);
+
+    </script>
+</body>
+
+</html>
