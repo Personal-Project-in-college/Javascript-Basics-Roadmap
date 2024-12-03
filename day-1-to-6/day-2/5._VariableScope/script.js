@@ -8,11 +8,11 @@
             console.log(namaGlobal); // Output: Farhan
 
     // TODO Code  2. Local Scope
-        function halo() {
+        function haloLocal() {
             let namaLocal = "Ginting"; // Local
             console.log(namaLocal); // Output: Ginting
         }
-        halo();
+        haloLocal();
         console.log(namaLocal); // ERROR! Karena 'nama' di sini lokal ke fungsi halo.
 
     // TODO Code  3. Block Scope
