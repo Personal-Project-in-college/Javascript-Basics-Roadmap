@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Button Aler</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        #kirim:hover {  
+            background-color: green;  
+            color: white;
+        } 
+
+        .btn-alert {
+            height: 70px;
+            width: 140px;
+            font-size: larger;
+            background-color: black;
+            color: yellow;
+            
+        }
+        .btn-alert:hover {
+            background-color:yellow;
+            color: black;
+            cursor: pointer;
+        }
+        
+    </style>
+
+    <div class="container">
+        <h1 id="main-heading">Button Alert</h1>
+        <button type="submit" id="btnAlert" class="btn-alert">Coba Klik Tombol Ini</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
