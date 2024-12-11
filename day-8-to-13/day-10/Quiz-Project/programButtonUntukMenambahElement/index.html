@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        /* Reset gaya dasar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Container utama */
+        .container {
+            display: flex; /* Gunakan Flexbox untuk membuat dua kolom */
+            justify-content: space-between; /* Ruang antara dua kolom */
+            align-items: center;
+            height: 100vh; /* Full height */
+            padding: 0 10%;
+        }
+
+        /* Kolom kiri */
+        .left-column {
+            flex: 1; /* Membuat lebar proporsional */
+            text-align: center;
+        }
+
+        .left-column h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .left-column button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .left-column button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Kolom kanan */
+        .right-column {
+            flex: 1;
+        }
+
+        .right-column ul {
+            list-style: none; /* Hilangkan bullet list */
+            padding: 0;
+        }
+
+        .right-column li {
+            padding: 10px 15px;
+            margin: 5px 0;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-column li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Kolom kiri -->
+        <div class="left-column">
+            <h1>Kolom Kiri</h1>
+            <button type="button" id="btn-klik">Klik Saya</button>
+        </div>
+
+        <!-- Kolom kanan -->
+        <div class="right-column">
+            <ul id="main-list">
+                <li class="item-list">Item 1</li>
+                <li class="item-list">Item 2</li>
+                <li class="item-list">Item 3</li>
+                <li class="item-list">Item 4</li>
+                <li class="item-list">Item 5</li>
+            </ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
