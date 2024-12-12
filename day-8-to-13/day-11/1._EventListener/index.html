@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        /* Styling untuk judul */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Container untuk tombol */
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Styling untuk tombol */
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-one {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .btn-two {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .btn-three {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-one:hover {
+            background-color: #45a049;
+        }
+
+        .btn-two:hover {
+            background-color: #1e88e5;
+        }
+
+        .btn-three:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Event Listener</h1>
+    <div class="button-container">
+        <button class="btn-one" onclick="alert('You Click Button 1')">Button 1</button>
+        <button class="btn-two" id="btn-two">Button 2</button>
+        <button class="btn-three" id="btn-three">Button 3</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal More</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f9fc;
+        }
+
+        /* Styling untuk container box */
+        .box {
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            background-color: #e3f2fd;
+        }
+
+        /* Styling untuk teks di dalam box */
+        .box-text {
+            font-size: 1.2rem;
+            color: #007bff;
+        }
+
+        /* Styling untuk paragraf baru */
+        .hidden-paragraph {
+            display: none;
+            margin-top: 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box utama -->
+    <div class="box" id="revealBox">
+        <span class="box-text" id="reveal-btn">Reveal More</span>
+    </div>
+
+    <!-- Paragraf tersembunyi -->
+    <p class="hidden-paragraph" id="hiddenParagraph">
+        This is the revealed content! Click the box again to hide it.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
